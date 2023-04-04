@@ -1,1 +1,1 @@
-# https-github.com-smoy-iambic-templates-tutorial-gist
+# iambic-templates-tutorial-gist
