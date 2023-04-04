@@ -1,0 +1,20 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 3 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdaxmfo8f92/.iambic/repos/resources/aws/iam/role/multi_account/log_r
+    eading.yaml
+    ├── iambic-tutorial-aws-prod - (251344704583)
+    │   └── aws:iam:role // LogReadingRole_iambic-tutorial-aws-prod
+    ├── iambic-tutorial-aws-stage - (373115601789)
+    │   └── aws:iam:role // LogReadingRole_iambic-tutorial-aws-stage
+    └── iambic-tutorial-aws-dev - (961373467395)
+        └── aws:iam:role // LogReadingRole_iambic-tutorial-aws-dev
