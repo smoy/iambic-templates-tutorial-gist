@@ -1,0 +1,16 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Update
+└── /tmp/lambdabgp0zxjs/.iambic/repos/resources/aws/iam/role/iambic-tutorial-aws
+    -dev/sample-app-role-dev.yaml
+    └── iambic-tutorial-aws-dev - (961373467395)
+        └── aws:iam:role // sample-app-role-dev
