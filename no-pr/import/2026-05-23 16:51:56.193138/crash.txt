@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/app/iambic/plugins/v0_1_0/github/github.py", line 558, in wrapped_workflow_func
+    template_changes = workflow_func(repo_url, default_branch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/iambic/plugins/v0_1_0/github/github.py", line 723, in _handle_import
+    raise e
+  File "/app/iambic/plugins/v0_1_0/github/github.py", line 718, in _handle_import
+    repo.remotes.origin.push(refspec=f"HEAD:{default_branch}").raise_if_error()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/git/remote.py", line 1118, in push
+    return self._get_push_info(proc, progress, kill_after_timeout=kill_after_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/git/remote.py", line 927, in _get_push_info
+    proc.wait(stderr=stderr_text)
+  File "/usr/local/lib/python3.11/site-packages/git/cmd.py", line 604, in wait
+    raise GitCommandError(remove_password_if_present(self.args), status, errstr)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git push --porcelain -- origin HEAD:main
+  stderr: 'fatal: Authentication failed for 'https://github.com/smoy/iambic-templates-tutorial.git/''
